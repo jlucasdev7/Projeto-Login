@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Login</title>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+                <!-- Imagem CSS Aqui!-->
+            </div>
+            <div id="form">
+                <h1>Login</h1>
+                <p>Seja Bem-Vindo(a)!</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="field">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="email" id="iemail" placeholder="Digite Seu E-mail" required autocomplete="email" minlength="30">
+                        <label for="iemail">Login</label>
+                    </div>
+                    <div class="field">
+                        <i class="material-icons">lock</i>
+                        <input type="password" name="password" id="ipassword" placeholder="Digite Sua Senha" required autocomplete="current-password" minlength="8" maxlength="16">
+                        <label for="ipassword">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="../forgotPassword.html" class="button">Esqueci Senha<i class="material-icons">mail</i></a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
